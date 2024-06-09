@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ออมเงิน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topicCont">
+        <h1>การคำนวณการออมเงิน</h1>
+        <h3>วางแผนออมเงิน สู้เงินเฟ้อ!!</h3>
+    </div>
+    <div class="inputAndLabel">
+        <label for="money_perMonth" class="labelValue">จำนวนเงินที่ออมต่อเดือน (บาท):</label>
+        <input type="number" id="money_perMonth" class="inputValue" required><br><br>
+    
+        <label for="inflation_rate" class="labelValue">อัตราการเพิ่มขึ้นต่อปี (%):</label>
+        <input type="number" id="inflation_rate" class="inputValue" required><br><br>
+    
+        <label for="years" class="labelValue">จำนวนปี:</label>
+        <input type="number" id="years" class="inputValue" required><br><br>
+    
+        <button onclick="calculateSavings()">คำนวณ</button>
+    </div>
+    
+    <h2>ผลลัพธ์</h2>
+    <div class="outputCont">
+        <div id="results" class="outputLabel"></div>
+    </div>
+    <script src="savingApp.js"></script>
+</body>
+</html>
